@@ -20,9 +20,10 @@ function setup() {
   przerwy = createSlider (16, 128, 64, 8);
   createSpan('treść napisu');
   napis = createInput ("tekst");
-
-  canvas.mousePressed(restart);
-
+  
+  enter = createButton ("Zapisz");
+  enter.mousePressed (restart);
+  
   em = rozmiar.value();
   pismo = createGraphics (em, height);
 
