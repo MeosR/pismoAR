@@ -12,7 +12,7 @@ function setup() {
   createSpan('rotation speed');
   speed = createSlider (0, 1, 0.1, 0.05);
 
-  let canvas = createCanvas(600, 500, WEBGL);
+  let canvas = createCanvas(200, 500, WEBGL);
 
  createSpan('font size');
   rozmiar = createSlider (16, 128, 64, 8);
