@@ -9,19 +9,19 @@ let napis;
 
 function setup() {
 
-  createSpan('szybkość obrotu');
+  createSpan('rotation speed');
   speed = createSlider (0, 1, 0.1, 0.05);
 
   let canvas = createCanvas(600, 500, WEBGL);
 
- createSpan('rozmiar tekstu');
+ createSpan('font size');
   rozmiar = createSlider (16, 128, 64, 8);
-  createSpan('interlinia');
+  createSpan('leading');
   przerwy = createSlider (16, 128, 64, 8);
-  createSpan('treść napisu');
-  napis = createInput ("tekst");
+  createSpan('text');
+  napis = createInput ("text");
   
-  enter = createButton ("Zapisz");
+  enter = createButton ("Load");
   enter.mousePressed (restart);
   
   em = rozmiar.value();
